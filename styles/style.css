@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --background-color: #fff;
+    --primary-icon-color: #B41943;
+    --primary-text-color: #161616;
+    --secondary-text-color: #2B2B2B;
+    --gray-color: #CCCCCC;
+    --white-color-1: #EFEFEF;
+    --white-color-2: #FEFEFE;
+    --green-color: #008000;
+    --button-font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--background-color);
+}
+
+.container {
+    padding: 0 200px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    width: 48px;
+    height: 48px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-link:hover {
+    color: var(--primary-icon-color);
+}
+
+.navbar-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #161616;
+}
+
+.navbar-button {
+    font-size: 12px;
+    color: var(--primary-icon-color);
+    font-weight: bold;
+    border: 2px solid var(--primary-icon-color);
+    border-radius: 20px;
+    width: 158px;
+    height: 39px;
+}
+
+.hero {
+    background: url(../images/hero.png) no-repeat;
+    background-size: cover;
+    height: 514px;
+    width: 100%;
+    position: relative;
+}
+
+.hero-box-container {
+    position: absolute;
+
+    right: 0;
+    width: 50%;
+    height: 100%;
+
+    /* z-index: 999; */
+}
+
+.hero-box {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    z-index: 0.9;
+}
+
+
+
+.hero-container {
+    width: 100%;
+    display: flex;
+    align-items: end;
+
+}
+
+.hero-button {
+    width: 165px;
+    height: 48px;
+    border-radius: 24px;
+    font-size: 14px;
+    padding: 6px 16px 6px 8px;
+}
+
+.hero-h1 {
+    font-size: 49px;
+    font-weight: bold;
+    padding-top: 93px;
+    padding-left: 78px;
+    width: 500px;
+    color: var(--white-color-2);
+    text-align: end;
+    z-index: 9999;
+}
+
+svg {
+    width: 48px;
+    height: 48px;
+    background: transparent;
+    color: #008000;
+    z-index: 999;
+    /* color: #FEFEFE; */
+}
+
+.hero-p {
+    font-size: 17px;
+    font-weight: 100;
+    padding-left: 78px;
+    padding-top: 16px;
+    width: 500px;
+    color: var(--white-color-2);
+    text-align: end;
+    z-index: 9999;
+}
+
+.features {
+    width: 1000px;
+    padding: 35px 87px 35px 87px;
+}
+
+.features-icons {
+    height: 46.76px;
+    width: 48.8px;
+}
+
+.features-h1 {
+    color: var(--primary-text-color);
+    font-size: 24px;
+}
+
+.features-p {
+    font-size: 20px;
+    color: var(--primary-text-color);
+}
+
+.features-container {
+    display: flex;
+}
+
+.services-h1 {
+    color: var(--secondary-text-color);
+    font-size: 36px;
+}
+
+.services-p {
+    font-size: 16px;
+    color: var(--secondary-text-color);
+}
+
+.services-box {
+    width: 229.79px;
+    height: 205.227px;
+    background-color: var(--white-color-2);
+}
+
+.services-icon {
+    color: var(--primary-icon-color);
+}
+
+.what-new {
+    max-width: 100%;
+    max-height: 572px;
+    margin: 0 auto;
+    padding: 78px 196.03px 78px 198px;
+}
+
+.what-new-h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--primary-text-color);
+}
+
+.what-new-p {
+    font-size: 19px;
+    color: var(--primary-text-color);
+}
+
+.what-new-container {
+    display: flex;
+}
+
+.section-map {
+    max-width: 100%;
+    min-width: 789px;
+    padding: 78px 196px 78px 198px;
+    background-color: var(--background-color);
+}
+
+.section-map-h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: var (--secondary-text-color);
+}
+
+.section-map-p {
+    font-size: 20px;
+    color: var(--secondary-text-color);
+    font-weight: lighter;
+}
