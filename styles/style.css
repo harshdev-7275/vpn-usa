@@ -298,6 +298,11 @@ svg {
     margin: 0 auto;
     background-color: var(--white-color-1);
     padding: 78px 0px 78px 0px;
+
+}
+
+.what-new-container {
+    margin-left: 80px;
 }
 
 .what-new-h1 {
@@ -371,16 +376,22 @@ svg {
         z-index: 9999;
     }
 
+    .spotlight {
+        height: auto;
+    }
+
     .spotlight-container {
         padding-top: 78px;
         padding-bottom: 77.83px;
         margin-left: 0;
         margin: 0 auto;
+        margin-bottom: 100px;
     }
 
     .services-box-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
 
 @media screen and (max-width: 900px) {
