@@ -304,8 +304,7 @@ svg {
     margin: 0 auto;
     background-color: var(--white-color-1);
     padding: 78px 0px 78px 0px;
-
-
+    padding-left: 60px;
 }
 
 
@@ -318,7 +317,8 @@ svg {
 .what-new-container {
     display: flex;
     align-items: center;
-    overflow-x: hidden;
+    /* overflow-x: hidden;   */
+    gap: 62px;
 }
 
 .what-new-content {
@@ -836,6 +836,14 @@ svg {
     .testimonial {
         height: auto;
     }
+
+    .carousel-controls {
+        margin-top: 150px;
+    }
+
+    .footer-text {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -924,6 +932,23 @@ svg {
         flex-direction: column-reverse;
 
     }
+
+    .testimonial-h1 {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .carousel-controls {
+        margin-top: 30px;
+    }
+
+    .footer-text {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 667px) {
@@ -991,6 +1016,18 @@ svg {
     .map-img img {
         width: 450px;
         height: 200px
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .footer-box {
+        flex-direction: column;
+    }
+
+    .footer-text {
+        text-align: center;
     }
 }
 

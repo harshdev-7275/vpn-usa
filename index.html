@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -319,14 +320,15 @@
           get back to you.
         </p>
         <div class="contact-us-box-container">
-          <form action="" class="contact-us-form">
+          <form action="" id="contactform" class="contact-us-form">
             <div class="contact-us-form-group">
               <label for="name" class="contact-us-form-label">NAME&#42;</label>
               <input
                 type="text"
-                id="name"
+                required
                 placeholder="Enter your name"
                 class="contact-us-form-input"
+                id="name"
               />
             </div>
             <div class="contact-us-form-group">
@@ -335,9 +337,10 @@
               >
               <input
                 type="email"
-                id="name"
+                required
                 placeholder="Enter your email ID"
                 class="contact-us-form-input"
+                id="email"
               />
             </div>
             <div class="contact-us-form-group">
@@ -345,10 +348,13 @@
                 >YOUR QUESTION&#42;</label
               >
               <textarea
-                id="question"
+                required
                 placeholder="Enter your question here"
                 class="contact-us-form-input"
+                id="questions"
+                rows="3"
               ></textarea>
+
               <button class="contact-us-form-button">Submit</button>
             </div>
           </form>
@@ -398,17 +404,24 @@
               Copyright &#169; 2024 All right reserved | Made with
               <span>&#10084;</span> by
             </p>
-            <a href="">Open VPN LLC</a>
+            <a href="#">Open VPN LLC</a>
           </div>
         </div>
         <div class="footer-links">
-          <a href=""><img src="./images/facebook.png" alt="fb" /></a>
-          <a href=""><img src="./images/twitter.png" alt="twitter" /></a>
-          <a href=""><img src="./images/instagram.png" alt="ig" /></a>
+          <a href="#"><img src="./images/fb.png" alt="fb" /></a>
+          <a href="#"><img src="./images/x.png" alt="twitter" /></a>
+          <a href="#"><img src="./images/ig.png" alt="ig" /></a>
         </div>
       </div>
     </footer>
-
+    <script>
+      var form = document.querySelector("#contactform");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        sendMail();
+      });
+    </script>
+    <script src="sendMail.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
