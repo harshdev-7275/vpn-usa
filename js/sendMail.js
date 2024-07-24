@@ -18,13 +18,16 @@ function sendMail() {
     "https://dashnet3.actmobile.com/api/dataplanes/send_mail_to_recipient",
     data,
     function (result) {
-      if (result == "Status : ok ") {
+      console.log(result.status);
+      if (result?.status === "ok") {
+        // console.log(result);
+        alert("Your message has been sent successfully.");
         document.getElementById("contactform").reset();
-        document.getElementById("alertSuccess").classList.remove("hide-alert");
-        setTimeout(alertSucessDisplay, 3000);
+        // document.getElementById("alertSuccess").classList.remove("hide-alert");
+        // setTimeout(alertSucessDisplay, 3000);
       } else {
-        document.getElementById("alertDanger").classList.remove("hide-alert");
-        setTimeout(alertDangerDisplay, 3000);
+        // document.getElementById("alertDanger").classList.remove("hide-alert");
+        // setTimeout(alertDangerDisplay, 3000);
       }
     }
   );

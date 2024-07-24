@@ -33,7 +33,7 @@ window.addEventListener("resize", updateCarousel);
 updateCarousel(); 
 setInterval(nextSlide, 4000); 
 
-
+//hamburger-menu
 document.addEventListener('DOMContentLoaded', function() {
   const hamburger = document.getElementById('hamburger');
   const navLinks = document.getElementById('nav-links-hamburger');
