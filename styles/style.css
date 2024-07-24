@@ -11,6 +11,8 @@
     /* --green-color: #008000; */
     /* --button-font-size: 14px; */
     --footer-bg-color: #D7D7D7;
+    --alert-success-color: #008000;
+    --alert-danger-color: #B41943;
 }
 
 html {
@@ -36,6 +38,37 @@ a {
 body {
     font-family: "Montserrat", sans-serif;
     background-color: var(--background-color);
+    position: relative;
+}
+.alert{
+    border: none;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    transition: all 0.5s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transform: translateX(120%);
+}
+.alert-success{
+    background-color: var(--alert-success-color);
+    color: var(--background-color);
+    font-size: 14px;
+    font-weight: 500;
+    
+}
+.active{
+    transform: translateX(0);
+    color: var(--background-color);
+    font-size: 14px;
+    font-weight: 500;
+}   
+
+
+.alert-danger{
+    background-color: var(--alert-danger-color);
 }
 
 .container {
