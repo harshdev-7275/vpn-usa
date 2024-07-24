@@ -10,24 +10,36 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Document</title>
   </head>
   <body>
-    <nav class="container">
+    <!-- Navbar -->
+    <nav class="container navbar-container">
       <div class="navbar">
         <a href="/" class="navbar-logo">
           <img src="images/logo.png" alt="Logo" class="navbar-logo" />
         </a>
         <div class="navbar-links">
           <a class="navbar-text navbar-link" href="#">Features</a>
-          <a class="navbar-text navbar-link" href="#">About Us</a>
-          <a class="navbar-text navbar-link" href="#">Contact Us</a>
+          <a class="navbar-text navbar-link" href="#about-us">About Us</a>
+          <a class="navbar-text navbar-link" href="#contact-us">Contact Us</a>
           <a class="navbar-text navbar-link" href="#">FAQ</a>
         </div>
         <button class="navbar-button">Get Started</button>
+        <button class="navbar-hamburger" id="hamburger"><i class="fa fa-bars"></i></button>
+      </div>
+      <div class="navbar-links-hamburger" id="nav-links-hamburger">
+        <a class="navbar-text navbar-link navbar-hamburger-link" href="#">Features</a>
+        <a class="navbar-text navbar-link navbar-hamburger-link" href="#about-us">About Us</a>
+        <a class="navbar-text navbar-link navbar-hamburger-link" href="#contact-us">Contact Us</a>
+        <a class="navbar-text navbar-link navbar-hamburger-link" href="#">FAQ</a>
       </div>
     </nav>
+    
+    
+    <!-- Hero -->
     <section class="hero">
       <img src="./images/hero.png" alt="hero" class="hero-img" />
       <div class="hero-box"></div>
@@ -49,8 +61,10 @@
         </div>
       </div>
     </section>
-    <section class="spotlight">
+    <!-- Spotlight -->
+    <section class="spotlight" id="about-us">
       <div class="container spotlight-container">
+        <!-- Features -->
         <div class="features">
           <div class="feature">
             <img src="./images/user.png" alt="" class="features-icons" />
@@ -74,6 +88,7 @@
             </div>
           </div>
         </div>
+        <!-- Services -->
         <div class="services-container">
           <div class="services">
             <h1 class="services-h1">
@@ -107,6 +122,7 @@
         </div>
       </div>
     </section>
+    <!-- What's New -->
     <section class="what-new">
       <div class="container what-new-container">
         <div class="what-new-container">
@@ -164,6 +180,7 @@
         </div>
       </div>
     </section>
+    <!-- Map -->
     <section class="map">
       <div class="container">
         <h1 class="map-h1">Huge global network of fast VPN</h1>
@@ -173,6 +190,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Testimonial -->
     <section class="testimonial">
       <div class="container testimonial-container">
         <h1 class="testimonial-h1">Trusted by thousands of happy customer</h1>
@@ -302,7 +321,8 @@
         </div>
       </div>
     </section>
-    <section class="contact-us">
+    <!-- Contact Us -->
+    <section class="contact-us" id="contact-us">
       <div class="container contact-us-container">
         <h1 class="contact-us-h1">Contact Us</h1>
         <p class="contact-us-p">
@@ -340,9 +360,9 @@
               <textarea
                 required
                 placeholder="Enter your question here"
-                class="contact-us-form-input"
+                class="contact-us-form-input-textarea"
                 id="questions"
-                rows="3"
+             
               ></textarea>
 
               <button class="contact-us-form-button">Submit</button>
@@ -363,19 +383,20 @@
         </div>
       </div>
     </section>
-
+    <!-- Download Now -->
     <section class="download-now">
       <div class="container download-now-container">
         <h1 class="download-now-h1">Download This App Today!</h1>
         <div class="download-now-button-container">
-          <a class="download-now-button">
+          <a href="https://apps.apple.com/us/app/vpn-us-using-free-vpn-org/id1091634286?ls=1" target="_blank" class="download-now-button">
             <img
               src="./images/appstore.png"
               class="download-now-img"
               alt="appstore"
             /><span>Available on App Store</span>
           </a>
-          <a class="download-now-button">
+          <a href="https://apps.apple.com/us/app/vpn-us-using-free-vpn-org/id1091634286?ls=1" target="_blank" class="download-now-button"
+          >
             <img
               src="./images/apple.png"
               class="download-now-img"
@@ -385,6 +406,7 @@
         </div>
       </div>
     </section>
+    <!-- Footer -->
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-box">
